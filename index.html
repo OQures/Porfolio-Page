@@ -14,33 +14,29 @@
 <body>
 	
 	<header>
-
 		<nav>
 			<h1>OSSAMA/QURESHI</h1>
-
 			<div class="menu">
-				<a href="#">My Skills</a>
-				<a href="#">Projects</a>
-				<a href="#">About Me</a>
-				<a href="#">Contact Me</a>
+				<a href="#aboutMe">About Me</a>
+				<a href="#mySkills">My Skills</a>
+				<a href="#projects">Projects</a>
+				<a href="#" id="pageTop" onclick="toggleModal()">Contact Me</a>
 				<a href="#">Resume</a>
 			</div>
-
 			<button class="hamburger">
 				<span class="material-icons">menu</span>
 			</button>
 		</nav>
-
 		<div class="mobile-menu">
-			<a href="#">My Skills</a>
-			<a href="#">Projects</a>
-			<a href="#">About Me</a>
+			<a href="#aboutMe">About Me</a>
+			<a href="#mySkills">My Skills</a>
+			<a href="#projects">Projects</a>
 			<a href="#">Contact Me</a>
 			<a href="#">Resume</a>
 		</div>
 	</header>
 <!-- Start Of Waves Section -->
-	<section>
+	<section class="intro">
 		<div class="row">
 			<div class="inner-header flex">
 				<div class="col">
@@ -73,14 +69,14 @@
 		<!--Waves end-->
 	</section>
 <!-- End Of Waves Section -->
-	<section class="about">
+	<section class="about" id="aboutMe">
 		<div class="aboutTitle">
 			<h2 style="color: black; font-size: 40px;">ABOUT ME</h2>
 		</div>
 		<div class="container">
 			<div class="box">
 				<p>I'm a Full-Stack Software Engineer based in Baltimore, MD. I acquired my Bachelor's Degree from Towson University in Cell and Molecular Biology with the intent on attending Dental School, however the career path never peaked my interest.</p> 
-				<p> I was introduced to software engineering through a friend and haven't looked back since. To further my education in the field, I attended Nucamp's Full-Stack Coding Bootcamp which prepared me to build Responsive Webpages from Front-End to Back-End.</p>
+				<p> I was introduced to software engineering through a friend and haven't looked back since. To further my education in the field, I attended Nucamp's Full-Stack Coding Bootcamp which prepared me to build Responsive Webpages and Mobile Applications from Front-End to Back-End.</p>
 				<p> When I'm not consumed by my code, you can find me either working out, hiking with friends, or gaming.</p>
 			</div>
 			<div class="img">
@@ -90,7 +86,7 @@
 	</section>
 
 	<!-- Beginning of my Skills Section -->
-	<section class="mySkills">
+	<section class="mySkills" id="mySkills">
 		<div class="aboutTitle">
 			<h2 style="color: black; font-size: 40px;">MY SKILLS</h2>
 		</div>
@@ -250,7 +246,7 @@
 		</div>
 	  </section>
 
-	<section class='footer'>
+	<section class="footer" id="footer">
 		<div class="container">
 			<div class="description">
 				<h1>Ossama Qureshi</h1>
@@ -261,16 +257,16 @@
 				<p>
 					<a href="https://www.linkedin.com/in/ossama-qureshi-5b2693238/"><i class="fa-brands fa-linkedin fa-2x"></i></a>
 					<a href="https://github.com/OQures"><i class="fab fa-github fa-2x"></i></a>
-					<a href="https://twitter.com/Osso145"><i class="fa-brands fa-twitter fa-2x"></i></a>
+					<a href="https://twitter.com/O_Qures"><i class="fa-brands fa-twitter fa-2x"></i></a>
 				</p>
 			</div>
 			<div class="links">
 				<h1>Useful Links</h1>
 				<p>
-					<a href="#">My Skills</a>
-					<a href="#">Projects</a>
-					<a href="#">About Me</a>
-					<a href="#">Contact Me</a>
+					<a href="#mySkills">My Skills</a>
+					<a href="#projects">Projects</a>
+					<a href="#aboutMe">About Me</a>
+					<a href="#" onclick="toggleModal()">Contact Me</a>
 					<a href="#">Resume</a>
 				</p>
 			</div>
@@ -285,6 +281,107 @@
 			<p class="cr">© Copyright 2022. Made by Ossama Qureshi</p>
 		</div>
 	</section>
+
+<!-------------------------------------------------------- MODAL START -------------------------------------------------------->
+<div class="modal">
+	<div class="modal__half modal__about">
+	  <h3 class="modal__title modal__title--about">Here's a bit about me.</h3>
+	  <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer.</h4>
+	  <p class="modal__para">
+		I'm a 21 year-old Australian <b class="orange">frontend software engineer</b> with experience developing
+		websites for top-tech companies like <b class="orange">Google</b> and <b class="orange">Canva</b>.
+		<br>
+		I currently solve extremely difficult engineering
+		problems every day with <b class="orange">React</b>, <b class="orange">TypeScript</b> and <b
+		  class="orange">MobX</b>
+		in Canva's Video team.
+	  </p>
+	  <div class="modal__languages">
+		<figure class="modal__language">
+		  <img class="modal__language--img"
+			src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+			alt="">
+		  <span class="language__name">HTML</span>
+		</figure>
+		<figure class="modal__language">
+		  <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+			alt="">
+		  <span class="language__name">CSS</span>
+		</figure>
+		<figure class="modal__language">
+		  <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
+			alt="">
+		  <span class="language__name">JavaScript</span>
+		</figure>
+		<figure class="modal__language">
+		  <img class="modal__language--img"
+			src="https://cdn.iconscout.com/icon/free/png-256/typescript-3521774-2945272.png" alt="">
+		  <span class="language__name">TypeScript</span>
+		</figure>
+
+		<figure class="modal__language">
+		  <img class="modal__language--img" src="https://mobx.js.org/img/mobx.png" alt="">
+		  <span class="language__name">MobX</span>
+		</figure>
+		<figure class="modal__language">
+		  <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
+			alt="">
+		  <span class="language__name">React</span>
+		</figure>
+		<figure class="modal__language">
+		  <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/vue-282497.png" alt="">
+		  <span class="language__name">Vue</span>
+		</figure>
+		<figure class="modal__language">
+		  <img class="modal__language--img"
+			src="https://cdn.iconscout.com/icon/free/png-256/nuxt-dot-js-3628959-3030184.png" alt="">
+		  <span class="language__name">Nuxt</span>
+		</figure>
+	  </div>
+	</div>
+	<div class="modal__half modal__contact">
+	  <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+	  <h3 class="modal__title modal__title--contact">
+		Let's have a chat!
+	  </h3>
+	  <h3 class="modal__sub-title modal__sub-title--contact">
+		I'm currently open to new opportunities.
+	  </h3>
+	  <form id="contact__form" onsubmit="contact(event)">
+		<div class="form__item">
+		  <label class="form__item--label">Name</label>
+		  <input class="input" name="user_name" type="text" required></input>
+		</div>
+		<div class="form__item">
+		  <label class="form__item--label">Email</label>
+		  <input class="input" name="user_email" type="email" required></input>
+		</div>
+		<div class="form__item">
+		  <label class="form__item--label">Message</label>
+		  <textarea class="input" name="message" type="text" required></textarea>
+		</div>
+		<button id="contact__submit" class="form__submit">
+		  Send it my way
+		</button>
+	  </form>
+	  <div class="modal__overlay modal__overlay--loading">
+		<i class="fas fa-spinner"></i>
+	  </div>
+	  <div class="modal__overlay modal__overlay--success">
+		Thanks for the message! Looking forward to speaking to you soon.
+	  </div>
+	</div>
+  </div>
+<!-------------------------------------------------------- MODAL END -------------------------------------------------------->
+
+
+
+	<script type="text/javascript">
+		window.addEventListener("scroll", function () {
+			var header = document.querySelector("header");
+			header.classList.toggle("sticky", window.scrollY > 0);
+		})
+	</script>
 
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
 	<script src="main.js"></script>
