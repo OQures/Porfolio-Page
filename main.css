@@ -29,7 +29,8 @@ nav h1 {
 }
 
 nav h1:hover {
-	color: #543ab7;
+	background: #543ab7;
+	color: white;
 }
 
 .menu {
@@ -39,14 +40,17 @@ nav h1:hover {
 }
 
 .menu a {
-	margin: 0 1rem;
+	margin: 0.3rem 0.3rem;
+	padding: 0.3rem 0.3rem;
 	color: rgb(0, 0, 0);
 	text-decoration: none;
 	transition: 0.3s;
+	border-radius: 10px;
 }
 
 .menu a:hover {
-	color: #543ab7;
+	color: white;
+	background: #543ab7;
 }
 
 .hamburger {
@@ -263,11 +267,11 @@ section h2 {
 
 .box {
 	flex: 1;
-	background: linear-gradient(60deg, #543ab7 0%, #00acc1 100%);
-	color: #FFF;
+	background: white;
+	color: black;
 	border-radius: 10px;
 	margin: 20px 10px;
-	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+	box-shadow: 0px 0px 80px rgba(34, 35, 58, 0.2);
 	padding: 15px 20px;
 }
 
@@ -611,7 +615,7 @@ section h2 {
 	background: rgb(242, 220, 220);
 	padding: 8px;
 	margin-bottom: 8px;
-	border-radius: 25px;
+	border-radius: 10px;
  }
 
 /* ---------------------------------Projects Section Start -------------------------------------------*/
@@ -708,6 +712,126 @@ li {
   }
 /* ---------------------------------Projects Section End-------------------------------------------*/
 
+/* ---------------------------------Footer Section Start-------------------------------------------*/
+.footer {
+	background: black;
+	margin-top: 40px;
+	justify-content: center;	
+	padding-bottom: 60px;
+}
+
+.footer h1 {
+	font-size: 24px;
+	letter-spacing: 0px;
+	padding-top: 80px;
+}
+
+.footer p {
+	color: white;
+}
+
+.footer a {
+	text-decoration: none;
+	color: white;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+.links p {
+	margin-top: 20px;
+}
+
+.footer a:hover {
+	background: #543ab7;
+}
+
+.footer .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer .description {
+	max-width: 33%;
+}
+
+.footer .socials {
+	max-width: 25%;
+	display: block;
+}
+
+.socials p {
+	margin: 0 auto;
+}
+
+hr {
+	margin-top: 0px;
+	max-width: 1280px;
+	display: flex;
+	justify-content: center;
+}
+
+.container .cr {
+	padding: 30px;
+	display: flex;
+	justify-content: center;
+}
+
+.bottom {
+	display: block;
+	justify-content: center;
+	background: black;
+	color: white;
+	margin: 0 auto;
+}
+
+.socials a:hover {
+	color: #543ab7;
+	background: none;
+}
+
+@media (min-width: 300px) {
+	.footer .container {
+		margin: 0 auto;
+		display:block;
+		justify-content: center;
+		text-align: center;
+	}
+	.footer .description {
+		max-width: 100%;
+	}
+	
+	.footer .socials {
+		max-width: 100%;
+		display: block;
+	}
+}
+
+
+@media (min-width: 1104px) {
+	.footer .container {
+		display:flex;
+		justify-content: space-between;
+	}
+	.footer .description {
+		max-width: 33%;
+	}
+	
+	.footer .socials {
+		max-width: 33%;
+		display: block;
+	}
+
+
+}
+
+@media (min-width: 1204px) {
+	.footer .container {
+		display:flex;
+		justify-content: space-between;
+	}
+}
+/* ---------------------------------Footer Section End-------------------------------------------*/
 
 /* --------------------------------Carousel Slider Finish-------------------------------------- */
 
