@@ -8,6 +8,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css">
 	<script src="https://kit.fontawesome.com/e77761732c.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link rel="stylesheet" href="main.css">
 	
 </head>
@@ -38,7 +39,7 @@
 	<section class="intro">
 		<div class="row">
 			<div class="inner-header flex">
-				<div class="col">
+				<div class="col" data-aos="fade-up" data-aos-delay="500">
 					<h1>WELCOME</h1>
 					<h2>Software Developer Portfolio</h2>
 					<div class="moving-mouse-holder">
@@ -68,7 +69,7 @@
 		<!--Waves end-->
 	</section>
 <!-- End Of Waves Section -->
-	<section class="about" id="aboutMe">
+	<section class="about" id="aboutMe" data-aos="fade-up" data-aos-delay="50">
 		<div class="aboutTitle">
 			<h2 style="color: black; font-size: 40px;">ABOUT ME</h2>
 		</div>
@@ -86,11 +87,11 @@
 
 	<!-- Beginning of my Skills Section -->
 	<section class="mySkills" id="mySkills">
-		<div class="aboutTitle">
+		<div class="aboutTitle" data-aos="fade-up" data-aos-delay="50">
 			<h2 style="color: black; font-size: 40px;">MY SKILLS</h2>
 		</div>
 		<div class="container">
-			<div class="blog-slider">
+			<div class="blog-slider" data-aos="fade-up" data-aos-delay="50">
 				<div class="blog-slider__wrp swiper-wrapper">
 			  
 				  <div class="blog-slider__item swiper-slide">
@@ -158,11 +159,11 @@
 	<section id="projects">
 		<div class="container">
 		  <div class="row">
-			<h1 class="section__title">
+			<h1 class="section__title" data-aos="fade-up" data-aos-delay="50">
 			  PROJECTS
 			</h1>
 			<ul class="project__list">
-			  <li class="project">
+			  <li class="project" data-aos="fade-up" data-aos-delay="50">
 				<div class="project__wrapper">
 				  <img src="./img/project.png" class="project__img" alt="">
 				  <div class="project__wrapper--bg"></div>
@@ -181,14 +182,14 @@
 						class="project__description--link">
 						<i class="fab fa-github"></i>
 					  </a>
-					  <a href="/" class="project__description--link">
+					  <a href="/" class="project__description--link" target="_blank">
 						<i class="fas fa-link"></i>
 					  </a>
 					</div>
 				  </div>
 				</div>
 			  </li>
-			  <li class="project">
+			  <li class="project" data-aos="fade-up" data-aos-delay="50">
 				<div class="project__wrapper">
 				  <img src="./img/project.png" class="project__img" alt="">
 				  <div class="project__wrapper--bg"></div>
@@ -214,7 +215,7 @@
 				  </div>
 				</div>
 			  </li>
-			  <li class="project">
+			  <li class="project" data-aos="fade-up" data-aos-delay="50">
 				<div class="project__wrapper">
 				  <img src="./img/project.png" class="project__img" alt="">
 				  <div class="project__wrapper--bg"></div>
@@ -245,7 +246,7 @@
 		</div>
 	  </section>
 
-	<section class="footer" id="footer">
+	<section class="footer" id="footer" data-aos="fade-up" data-aos-delay="50">
 		<div class="container">
 			<div class="description">
 				<h1>Ossama Qureshi</h1>
@@ -254,9 +255,9 @@
 			<div class="socials">
 				<h1>Follow me on my Socials</h1>
 				<p>
-					<a href="https://www.linkedin.com/in/ossama-qureshi-5b2693238/"><i class="fa-brands fa-linkedin fa-2x"></i></a>
-					<a href="https://github.com/OQures"><i class="fab fa-github fa-2x"></i></a>
-					<a href="https://twitter.com/O_Qures"><i class="fa-brands fa-twitter fa-2x"></i></a>
+					<a href="https://www.linkedin.com/in/ossama-qureshi-5b2693238/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+					<a href="https://github.com/OQures" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+					<a href="https://twitter.com/O_Qures" target="_blank"><i class="fa-brands fa-twitter fa-2x"></i></a>
 				</p>
 			</div>
 			<div class="links">
@@ -364,7 +365,10 @@
   </div>
 <!-------------------------------------------------------- MODAL END -------------------------------------------------------->
 
-
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
 
 	<script type="text/javascript">
 		window.addEventListener("scroll", function () {
