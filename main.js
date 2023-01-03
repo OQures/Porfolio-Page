@@ -1,6 +1,7 @@
 const hamburger = document.querySelector(".hamburger");
 const hamburger_icon = hamburger.querySelector("span");
 const mobile_menu = document.querySelector(".mobile-menu");
+// const closeMenu = document.querySelector(".closeMenu");
 
 hamburger.addEventListener("click", () => {
   hamburger_icon.innerText =
@@ -8,6 +9,14 @@ hamburger.addEventListener("click", () => {
 
   mobile_menu.classList.toggle("is-open");
 });
+
+// close hamburger menu
+// closeMenu.addEventListener("click", () => {
+//   hamburger_icon.innerText =
+//     hamburger_icon.innerText === "menu" ? "close" : "menu";
+
+//   mobile_menu.classList.toggle("is-closed");
+// });
 
 // Carousel Slider
 var swiper = new Swiper(".blog-slider", {
