@@ -670,7 +670,9 @@ li {
   }
   
   .project {
+	background-color: #000000;
 	margin-bottom: 135px;
+	border-radius: 15px;
   }
   
   .project__img {
